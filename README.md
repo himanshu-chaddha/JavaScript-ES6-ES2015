@@ -354,3 +354,37 @@ const msg = tag`hello my name is\n Bob, and my age is\n 10`;
 ```
 
 ## 6. Enhanced object properties
+
+#### Property Shorthand
+
+- Before ES6 we declare object by the key value pairs. Irrespective of the declarations of those keys above that object. eg.
+
+```
+var firstName = 'Bob';
+var lastName = 'harvey';
+var age = 20;
+
+var person{
+    firstName: firstName,
+    lastName: lastName,
+    age: age
+}
+console.log(person);
+```
+
+- But by ES6 if we have declared the variables above the object creations then we can only use those a key value pairs. eg.
+
+```
+var firstName = 'Bob';
+var lastName = 'harvey';
+var age = 20;
+
+var person{
+    firstName,
+    lastName,
+    age
+}
+console.log(person);
+```
+
+#### Computed property names
