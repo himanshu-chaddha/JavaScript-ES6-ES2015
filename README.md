@@ -23,6 +23,8 @@
 
 ## Let's Get In!
 
+## 1. const & let
+
 - When taking about it's features the first one come up on is `const` keyword:
 
 #### const keyword
@@ -66,4 +68,23 @@ x=1
 x=10;
 ```
 
-- A basic example to find the maximum no from an array is [eg. max.js]()
+- A basic example to find the maximum no from an array is [eg. max.js](https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015/blob/master/max.js)
+
+## 2. Block Scope
+
+- Basically anything inside { } is considered to be a block.
+- let and const both have a block level i.e you can not access the value of these varibale outside { }.
+- In nested block you can use same variable name because of it's scope. eg.
+
+```
+{
+    let x = 1;
+    {
+        let x = 2;
+        console.log(x);
+    }
+    console.log(x);
+}
+```
+
+`This also happens same with const keyword. Including keywords we can also use same function names in nested block.`
