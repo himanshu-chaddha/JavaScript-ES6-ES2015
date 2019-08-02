@@ -23,11 +23,11 @@
 
 ## Let's Get In!
 
-## 1. const & let
+## 1. Const & Let
 
 - When taking about it's features the first one come up on is `const` keyword:
 
-#### const keyword
+#### Const keyword
 
 > In JS we all know that to decalre a variable there is only one keyword i.e `var`. \
 > eg. var x = 1; \
@@ -54,7 +54,7 @@ x['key'] ='value';
 
 - Not only with objects but also with arrays we can add values and delete from it whenever needed.Because the object 'x' is refering to a mutable data type.
 
-#### let keyword
+#### Let keyword
 
 - Now, let's move on to the next feature i.e `let` keyword.
 - It is introduced to replace var keyword. Because by using `let` keyword we can not declare the same variable two times.
@@ -94,7 +94,7 @@ x=10;
 - It is an essential addition with ES6.
 - In arrow function we use `=>` this instead of using `function` keyword. **eg.**
 
-#### statement bodies
+#### Statement bodies
 
 ```
 const arr = [1,2,3,4,5];
@@ -114,7 +114,7 @@ const byTwo = arr.map(number => {
 console.log(byTwo);
 ```
 
-#### expression bodies
+#### Expression bodies
 
 - And, when there is only one line in the body of function, there is no need to put { } and return.
 
@@ -148,7 +148,7 @@ const byTwo = arr.map(()=>{
 console.log(byTwo);
 ```
 
-#### lexical this
+#### Lexical this
 
 ```
 var obj = {
@@ -184,7 +184,7 @@ obj.increment();
 
 ## 4. Extended Parameter Handling
 
-#### default parameter values
+#### Default parameter values
 
 - These are those parameter which are written as a default value of a variable inside a function argument.
 - If a function contains n no. of arguments and at the function call parameters are not passed, then the default values are used by the compiler.
@@ -208,7 +208,7 @@ buy('milk', 2);
 
 `This will overwrite the both values and set to new ones.`
 
-#### rest operator
+#### Rest operator
 
 - This is used when we don't know the size of parameters before hand.
 - It is used with three dots trailing with variable name. `eg. (...arr)=> return;`
