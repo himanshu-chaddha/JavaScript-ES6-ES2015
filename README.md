@@ -232,3 +232,43 @@ print(1,2,3,[4,5,6],{},'hello');
 `What happen this time, now age is set to 1 and sibling to 2 and rest of the parameters are again bind with arr array.`
 
 - Also you are restricted to write any of the parameter after a rest operator.
+
+#### Spread operator
+
+- This is used when we want to print all those arguments nested inside a html element.
+- It is same as rest operator as ...varibale_name.
+
+```
+function print(...args){
+    args = ['<br>', ...args, '</br>'];
+    console.log(args.join(' '));
+}
+print('hello', 'world');
+```
+
+- Not only arrays but we can use spread operator on any iterable collection eg. strings.
+
+```
+const msg = 'hello world';
+const chars = [...msg];
+console.log(chars);
+```
+
+- Also, we can use spread operator while calling function having so many arguments. It will automatically assign those values to the parameters.
+
+```
+function add(a,b){
+    return a + b;
+}
+const arr =[2,10];
+console.log(add(.arr));
+```
+
+- Also you can use it to copy the array and they both have different refrences.
+
+```
+const arr = [1,2,3,4];
+const arr2 = [...arr];
+```
+
+## 5. Template Literals
