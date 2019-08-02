@@ -272,3 +272,17 @@ const arr2 = [...arr];
 ```
 
 ## 5. Template Literals
+
+#### String Interpolation
+
+- Before ES6 we have to concatenate the strings using + symbol.
+- But now, we can manipulate the strings using \${variable_name} by enclosing the whole expression in backticks ``.
+
+```
+const name = 'Bob';
+const age = 25;
+const msg = `My name is ${name}. And I am ${age}.`
+console.log(msg);
+```
+
+#### Multi line template literals
