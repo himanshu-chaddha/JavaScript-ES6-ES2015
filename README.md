@@ -388,3 +388,28 @@ console.log(person);
 ```
 
 #### Computed property names
+
+- Before ES6 if we want to add some new property to the object then we do like this.
+
+```
+var key = 'lastName';
+var person = {
+    firstname: 'Bob'
+}
+person['key] = 'harvey';
+console.log(person);
+```
+
+- But this was a ugly to doing that, now we can do the same as:
+
+```
+var key = 'lastName';
+var person = {
+    firstname: 'Bob',
+    [key]: 'harvey',
+    ['age]: 20
+}
+console.log(person);
+```
+
+#### Method properties
