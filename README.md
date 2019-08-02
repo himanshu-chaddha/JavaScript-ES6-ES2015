@@ -183,3 +183,52 @@ obj.increment();
 ```
 
 ## 4. Extended Parameter Handling
+
+#### default parameter values
+
+- These are those parameter which are written as a default value of a variable inside a function argument.
+- If a function contains n no. of arguments and at the function call parameters are not passed, then the default values are used by the compiler.
+- If you are passing a value to a default parameter then the default value is overwritten by new value.
+
+```
+function buy(item = 'eggs', quantity = 1){
+    return;
+}
+buy();
+```
+
+`This will set the values to default`
+
+```
+function buy(item = 'eggs', quantity = 1){
+    return;
+}
+buy('milk', 2);
+```
+
+`This will overwrite the both values and set to new ones.`
+
+#### rest operator
+
+- This is used when we don't know the size of parameters before hand.
+- It is used with three dots trailing with variable name. `eg. (...arr)=> return;`
+
+```
+function print(...arr){
+    console.log(arr);
+}
+print(1,2,3,[4,5,6],{},'hello');
+```
+
+- And when we only knew few of the parameters and rest are unknown then also we can do it as.
+
+```
+function print(age, sibling, ...arr){
+    console.log(arr);
+}
+print(1,2,3,[4,5,6],{},'hello');
+```
+
+`What happen this time, now age is set to 1 and sibling to 2 and rest of the parameters are again bind with arr array.`
+
+- Also you are restricted to write any of the parameter after a rest operator.
