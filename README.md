@@ -413,3 +413,33 @@ console.log(person);
 ```
 
 #### Method properties
+
+- When we want the value of a property extracted by a function then we use method properties.
+
+```
+var person={
+    firstname: 'Bob',
+    age: 20,
+    haveABirthday: function(){
+        this.age++;
+    }
+}
+person.haveABirthday();
+console.log(person);
+```
+
+- But from ES6 this also become very concise as remove the colon of that property and function keyword:
+
+```
+var person={
+    firstname: 'Bob',
+    age: 20,
+    haveABirthday (){
+        this.age++;
+    }
+}
+person.haveABirthday();
+console.log(person);
+```
+
+## 7. Modules
