@@ -88,3 +88,98 @@ x=10;
 ```
 
 `This also happens same with const keyword. Including keywords we can also use same function names in nested block.`
+
+## 3. Arrow Function
+
+- It is an essential addition with ES6.
+- In arrow function we use `=>` this instead of using `function` keyword. **eg.**
+
+#### statement bodies
+
+```
+const arr = [1,2,3,4,5];
+const byTwo = arr.map((number)=>{
+    return number *2;
+});
+console.log(byTwo);
+```
+
+- when your function just have a single argument then tere is no need to pass it in the parenthesis.**eg.**
+
+```
+const arr = [1,2,3,4,5];
+const byTwo = arr.map(number => {
+    return number *2;
+});
+console.log(byTwo);
+```
+
+#### expression bodies
+
+- And, when there is only one line in the body of function, there is no need to put { } and return.
+
+```
+const arr = [1,2,3,4,5];
+const byTwo = arr.map(number => number *2);
+console.log(byTwo);
+```
+
+`It will be just a single line.`
+
+- And when you want to return an object by that function then, enclose the { }, with parenthesis.
+
+```
+const arr = [1,2,3,4,5];
+const byTwo = arr.map((number)=>({
+    number: number *2
+}
+));
+console.log(byTwo);
+```
+
+- If there is no argument in the function then,
+
+```
+const arr = [1,2,3,4,5];
+const byTwo = arr.map(()=>{
+    return 2;
+}
+);
+console.log(byTwo);
+```
+
+#### lexical this
+
+```
+var obj = {
+    value: 0,
+    increment: function(){
+        var that = this;
+        setTimout(function(){
+            that.value++;
+            console.log(that.value);
+        },1000);
+    }
+
+}
+obj.increment();
+```
+
+`This is happening before ES6. But after that we have an arrow method which will automatically bind this to the parent element.`
+
+```
+var obj = {
+    value: 0,
+    increment: function(){
+        var that = this;
+        setTimout(()=>{
+            that.value++;
+            console.log(that.value);
+        },1000);
+    }
+
+}
+obj.increment();
+```
+
+## 4. Extended Parameter Handling
