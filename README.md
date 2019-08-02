@@ -65,3 +65,5 @@ let x;
 x=1
 x=10;
 ```
+
+- A basic example to find the maximum no from an array is [eg. max.js]()
