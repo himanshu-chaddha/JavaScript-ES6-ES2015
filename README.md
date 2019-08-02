@@ -341,4 +341,16 @@ const msg = tag`My name is ${name}. and my age is ${age}`;
 console.log(msg);
 ```
 
-#### Raw
+#### Raw attribute
+
+- when our template contains escape characters like \n then it is removed when we print it.
+- To getting back the string same as written in the template we use raw attribute.
+
+```
+function tag(strings, ...arr){
+    console.log(strings.raw[0]);
+}
+const msg = tag`hello my name is\n Bob, and my age is\n 10`;
+```
+
+## 6. Enhanced object properties

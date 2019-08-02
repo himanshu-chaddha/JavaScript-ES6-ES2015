@@ -1,16 +1,4 @@
-function tag(strings, ...values) {
-  let msg = "";
-  strings.forEach((string, index) => {
-    msg += string;
-    if (index < values.length) {
-      msg += `<b>${values[index]}</b>`;
-    }
-  });
-  console.log(strings);
-  console.log(values);
-  return msg;
+function tag(strings, ...arr) {
+  console.log(strings.raw[0]);
 }
-const name = "Bob";
-const age = 10;
-const msg = tag`My name is ${name}. and my age is ${age}`;
-console.log(msg);
+const msg = tag`hello my name is\n Bob, and my age is\n 10`;
