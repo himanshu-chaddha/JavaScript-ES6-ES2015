@@ -286,3 +286,24 @@ console.log(msg);
 ```
 
 #### Multi line template literals
+
+- In JS ES5 we did multi line literals as:
+
+```
+const msg = "Hello, My name is\n" +
+"Bob and my age is\n" +
+"10."
+console.log(msg);
+```
+
+- But by ES6 we have multi line template literals which is an essential concept.
+  `To have multi line literals use backticks to enclose the lines and hit enter from where you want new line.`
+
+```
+const msg = `Hello, My name is
+Bob and my age is
+10.`
+console.log(msg);
+```
+
+#### Tagged template literals
