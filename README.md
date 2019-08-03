@@ -447,3 +447,12 @@ console.log(person);
 - In this section we will learn how to use import and export keywords which is a new feature of ES6.
 - We have to install another package to support this with node.js.
 - Use command on your terminal `node -r @std/esm main.mjs`.
+  `But this method is depricated from now because we also have ES8. So, we have to use following commands,`
+- New projects
+
+  > Run `npm init esm` or `yarn create esm`.
+
+- `Use the -y flag to answer “yes” to all prompts.`
+
+- Existing projects
+  > Run `npm i esm` or `yarn add esm.`
