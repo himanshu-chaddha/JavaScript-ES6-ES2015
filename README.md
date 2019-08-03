@@ -444,4 +444,6 @@ console.log(person);
 
 ## 7. Modules
 
-sdsdsdasd
+- In this section we will learn how to use import and export keywords which is a new feature of ES6.
+- We have to install another package to support this with node.js.
+- Use command on your terminal `node -r @std/esm main.mjs`.

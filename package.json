@@ -1,0 +1,24 @@
+{
+  "name": "JavaScript-ES6-ES2015",
+  "version": "1.0.0",
+  "description": "> This course is for those who have a decent understanding of javascript.",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015/issues"
+  },
+  "homepage": "https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
