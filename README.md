@@ -16,10 +16,12 @@
 ## What is ECMAScript?
 
 - ECMAScript is a scripting language standard and specification. And languages like:
+
   > JavaScript \
   > JScript \
-  > ActionScript \
-  > `There all are based on the ECMAScript standard.`
+  > ActionScript
+
+`There all are based on the ECMAScript standard.`
 
 ## Let's Get In!
 
@@ -29,9 +31,8 @@
 
 #### Const keyword
 
-> In JS we all know that to decalre a variable there is only one keyword i.e `var`. \
-> eg. var x = 1; \
-> `but this value can be changed at any point.` \
+> In JS we all know that to declare a variable there is only one keyword i.e `var`. \
+> eg. var x = 1; `but this value can be changed at any point.` \
 > eg. x = 'hello' or something else.
 
 - And there is no feature to make a varibale whose value can not be over written.
@@ -52,15 +53,14 @@ x['key'] ='value';
 
 `This is happening because the reference of this object is already set to 'x' and we are not changing any reference of the variable.`
 
-- Not only with objects but also with arrays we can add values and delete from it whenever needed.Because the object 'x' is refering to a mutable data type.
+- Not only with objects but also with arrays we can add values and delete from it whenever needed. Because the object 'x' is refering to a mutable data type.
 
 #### Let keyword
 
 - Now, let's move on to the next feature i.e `let` keyword.
-- It is introduced to replace var keyword. Because by using `let` keyword we can not declare the same variable two times.
-  > eg. let x=1; and let x=2;
+- It is introduced to replace var keyword. Because by using `let` keyword we can not declare the same variable two times. eg. `let x=1; and let x=2;`
 - But we can do that with var. In this case we can lost the pre declared value.
-- Also, we can declare it by not assigning any value befor hand. eg. `let x;`.And in this case we can assign as many times the value of x.
+- Also, we can declare it by not assigning any value before hand. eg. `let x;`, And in this case we can assign as many times the value of x.
 
 ```
 let x;
@@ -68,7 +68,7 @@ x=1
 x=10;
 ```
 
-- A basic example to find the maximum no from an array is [eg. max.js](https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015/blob/master/max.js)
+- A basic example to find the maximum number from an array is [eg. max.js](https://github.com/himanshu-chaddha/JavaScript-ES6-ES2015/blob/master/max.js)
 
 ## 2. Block Scope
 
@@ -116,7 +116,7 @@ console.log(byTwo);
 
 #### Expression bodies
 
-- And, when there is only one line in the body of function, there is no need to put { } and return.
+- And, when there is only one line in the body of function, there is no need to put { } and return statement.
 
 ```
 const arr = [1,2,3,4,5];
