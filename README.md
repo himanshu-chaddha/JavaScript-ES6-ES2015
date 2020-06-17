@@ -2,7 +2,7 @@
 
 > This course is for those who have a decent understanding of javascript.
 
-#### Recommended to use:
+## Recommended to use:
 
 - Vs code a text editor, [download it from here](https://code.visualstudio.com/download)
 - An extension of vs code i.e `Quokka.js`.[Read about it](https://quokkajs.com/)
@@ -23,9 +23,9 @@
 
 `There all are based on the ECMAScript standard.`
 
-## Let's Get In!
+### Let's Get In!
 
-## 1. Const & Let
+### 1. Const & Let
 
 - When taking about it's features the first one come up on is `const` keyword:
 
@@ -46,9 +46,10 @@
 
 - But if we declare the const variable with an empty object, then it don't give any error and also we can add the values to it.**eg.**
 
-```
+```javascript
 const x ={};
 x['key'] ='value';
+//  Fenced code
 ```
 
 `This is happening because the reference of this object is already set to 'x' and we are not changing any reference of the variable.`
